@@ -7,106 +7,22 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-
-body{
-  font-family: Georgia, serif;
-  background:#fffaf7;
-  color:#2d2d2d;
-  line-height:1.8;
-  overflow-x:hidden;
-}
-
-.hero{
-  min-height:100vh;
-  background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url("bestphoto.jpg") center/cover;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  color:white;
-  padding:30px;
-}
-
-.hero h1{
-  font-size:4.5rem;
-  margin-bottom:20px;
-}
-
-.hero p{
-  font-size:1.4rem;
-}
-
-.section{
-  max-width:950px;
-  margin:auto;
-  padding:110px 28px;
-  text-align:center;
-}
-
-.section h2{
-  font-size:3rem;
-  margin-bottom:35px;
-}
-
-.section p{
-  font-size:1.35rem;
-  margin-bottom:24px;
-}
-
-.photo{
-  width:100%;
-  max-width:780px;
-  border-radius:22px;
-  margin:35px auto;
-  display:block;
-  box-shadow:0 20px 45px rgba(0,0,0,.18);
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:22px;
-  margin-top:45px;
-}
-
-.card{
-  background:white;
-  border-radius:18px;
-  padding:26px;
-  box-shadow:0 12px 28px rgba(0,0,0,.08);
-}
-
-.card h3{
-  margin-bottom:12px;
-}
-
-.fade{
-  opacity:0;
-  transform:translateY(45px);
-  transition:1.1s ease;
-}
-
-.fade.show{
-  opacity:1;
-  transform:translateY(0);
-}
-
-.final{
-  background:#fff;
-  padding-bottom:150px;
-}
-
-.signature{
-  font-size:2rem;
-  color:#c94f7c;
-  margin-top:50px;
-}
-
-@media(max-width:700px){
-  .hero h1{font-size:3rem}
-  .section h2{font-size:2.3rem}
-  .section p{font-size:1.15rem}
-}
+body{font-family:Georgia,serif;background:#fffaf7;color:#2d2d2d;line-height:1.8;overflow-x:hidden}
+.hero{min-height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url("bestphoto.jpg") center/cover;display:flex;justify-content:center;align-items:center;text-align:center;color:white;padding:30px}
+.hero h1{font-size:4.5rem;margin-bottom:20px}
+.hero p{font-size:1.4rem}
+.section{max-width:950px;margin:auto;padding:110px 28px;text-align:center}
+.section h2{font-size:3rem;margin-bottom:35px}
+.section p{font-size:1.35rem;margin-bottom:24px}
+.photo{width:100%;max-width:780px;border-radius:22px;margin:35px auto;display:block;box-shadow:0 20px 45px rgba(0,0,0,.18)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:45px}
+.card{background:white;border-radius:18px;padding:26px;box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.card h3{margin-bottom:12px}
+.fade{opacity:0;transform:translateY(45px);transition:1.1s ease}
+.fade.show{opacity:1;transform:translateY(0)}
+.final{background:#fff;padding-bottom:150px}
+.signature{font-size:2rem;color:#c94f7c;margin-top:50px}
+@media(max-width:700px){.hero h1{font-size:3rem}.section h2{font-size:2.3rem}.section p{font-size:1.15rem}}
 </style>
 </head>
 
@@ -121,7 +37,7 @@ body{
 
 <section class="section fade">
   <h2>Where It All Began</h2>
-  <img class="photo" src="cuteselfie.jpg" alt="A memory together">
+  <img class="photo" src="IMG_8558.jpeg" alt="Cute selfie together">
   <p>We met on a dating app when you were visiting Boston.</p>
   <p>I had no idea that one swipe would lead to some of the most meaningful memories of my life.</p>
 </section>
@@ -194,25 +110,24 @@ body{
 
 <section class="section fade">
   <h2>Marin</h2>
-  <img class="photo" src="marin.jpg" alt="Marin memory">
+  <img class="photo" src="IMG_8530.jpeg" alt="Marin memory">
   <p>Beautiful views. Quiet moments. The kind of memories that stay with you forever.</p>
 </section>
 
 <section class="section fade">
   <h2>Monterey</h2>
-  <img class="photo" src="monterrey.jpg" alt="Monterey memory">
+  <img class="photo" src="IMG_9142.jpeg" alt="Monterey memory">
   <p>Ocean air. Long walks. Another chapter of us.</p>
 </section>
 
 <section class="section fade">
   <h2>Sacramento</h2>
-  <img class="photo" src="marriedinsac.jpg" alt="Sacramento memory">
+  <img class="photo" src="IMG_7936.jpeg" alt="Pretend married in Sacramento">
   <p>More adventures. More laughter. More memories that became part of our story.</p>
 </section>
 
 <section class="section fade">
   <h2>The Places We Called Ours</h2>
-
   <div class="grid">
     <div class="card"><h3>Boston</h3><p>Where we met and where everything began.</p></div>
     <div class="card"><h3>New York</h3><p>Where I told you I loved you and asked you to be my girlfriend.</p></div>
@@ -241,14 +156,11 @@ body{
 </section>
 
 <script>
-const observer = new IntersectionObserver(entries=>{
+const observer=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add("show");
-    }
+    if(entry.isIntersecting){entry.target.classList.add("show")}
   });
 },{threshold:.15});
-
 document.querySelectorAll(".fade").forEach(el=>observer.observe(el));
 </script>
 
