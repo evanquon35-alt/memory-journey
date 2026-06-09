@@ -4,292 +4,512 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For Jacqueline 🌷</title>
+<title>Our Story</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Georgia, serif;
+background:#faf7f5;
+color:#333;
+line-height:1.8;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+background:url("bestphoto.jpg") center center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.4rem;
+}
+
+.section{
+max-width:1000px;
+margin:auto;
+padding:100px 30px;
+text-align:center;
+}
+
+.section h2{
+font-size:3rem;
+margin-bottom:40px;
+}
+
+.section p{
+font-size:1.4rem;
+margin-bottom:30px;
+}
+
+.memory{
+margin:120px auto;
+max-width:900px;
+}
+
+.memory img{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+margin-bottom:40px;
+}
+
+.memory h3{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.places-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.place{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.place h4{
+margin-bottom:15px;
+font-size:1.4rem;
+}
+
+.final{
+background:#fff;
+padding:120px 30px;
+text-align:center;
+}
+
+.final h2{
+font-size:3rem;
+margin-bottom:40px;
+}
+
+.final p{
+max-width:900px;
+margin:auto;
+font-size:1.4rem;
+margin-bottom:25px;
+}
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:all 1.2s ease;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="hero">
-    <h1>For Jacqueline 🌷</h1>
-    <p class="subtitle">
-        A collection of memories, gratitude, and everything I wish I had said.
-    </p>
+<section class="hero">
 
-    <div class="scroll-indicator">
-        ↓ Scroll ↓
-    </div>
+<div class="hero-content">
+<h1>Our Story</h1>
+<p>Every memory. Every trip. Every moment.</p>
 </div>
 
-<section class="memory">
-    <h2>Where It All Began</h2>
-
-    <img src="boston-beginning.jpeg">
-
-    <p>
-        We met on a dating app when you were visiting Boston.
-    </p>
-
-    <p>
-        I had no idea that one swipe would lead to some of the most meaningful
-        memories of my life.
-    </p>
 </section>
 
-<section class="memory">
-    <h2>Our First Date</h2>
+<section class="section fade">
 
-    <p>
-        Back Bay mini golf.
-    </p>
+<h2>Where It All Began</h2>
 
-    <p>
-        You beat me.
-    </p>
+<img src="cuteselfie.jpg" style="width:100%;border-radius:20px;max-width:900px;">
 
-    <p>
-        I should have known then that I was in trouble.
-    </p>
+<p style="margin-top:40px;">
+We met on a dating app when you were visiting Boston.
+</p>
+
+<p>
+I had no idea that one swipe would lead to some of the most meaningful memories of my life.
+</p>
+
 </section>
 
-<section class="memory">
-    <h2>New York</h2>
+<section class="memory fade">
 
-    <img src="new-york.jpeg">
+<img src="newyork.jpeg">
 
-    <p>
-        Our first trip together.
-    </p>
+<h3>New York</h3>
 
-    <p>
-        Walking through Times Square with your beautiful smile beside me
-        remains one of my favorite memories.
-    </p>
+<p>
+Our first trip together.
+</p>
 
-    <p>
-        It was there that I told you I loved you.
-    </p>
+<p>
+We walked through Times Square.
+You beat me at mini golf before this and somehow won my heart too.
+</p>
 
-    <p>
-        And above New York City, I asked you to be my girlfriend.
-    </p>
+<p>
+New York became my favorite memory.
+</p>
 
-    <p>
-        I'll never forget that moment.
-    </p>
+<p>
+I told you I loved you.
+</p>
+
+<p>
+And above New York City,
+I asked you to be my girlfriend.
+</p>
+
 </section>
 
-<section class="memory">
-    <h2>The Little Things</h2>
+<section class="memory fade">
 
-    <img src="subway-memory.jpeg">
+<img src="cuddledup.jpeg">
 
-    <p>
-        The train rides.
-    </p>
+<h3>Us</h3>
 
-    <p>
-        The cuddles.
-    </p>
+<p>
+The best part was never where we were.
+</p>
 
-    <p>
-        The random photos.
-    </p>
+<p>
+It was always you.
+</p>
 
-    <p>
-        The quiet moments that somehow became my favorite memories.
-    </p>
 </section>
 
-<section class="memory">
-    <h2>Hawaii</h2>
+<section class="memory fade">
 
-    <p>
-        Surfing.
-    </p>
+<img src="hawaii.jpg">
 
-    <p>
-        Sunsets by China Walls.
-    </p>
+<h3>Hawaii</h3>
 
-    <p>
-        Shaved ice at Kendrick's dad's place.
-    </p>
+<p>
+Surfing.
+</p>
 
-    <p>
-        Warm nights.
-    </p>
+<p>
+Shaved ice.
+</p>
 
-    <p>
-        Endless cuddles.
-    </p>
+<p>
+Sunsets by China Walls.
+</p>
 
-    <p>
-        Happiness.
-    </p>
+<p>
+Cuddling after long days.
+</p>
+
+<p>
+Some of the happiest days of my life.
+</p>
+
 </section>
 
-<section class="memory">
-    <h2>Every Adventure</h2>
+<section class="memory fade">
 
-    <p>
-        Sydney.
-    </p>
+<img src="birthday.jpeg">
 
-    <p>
-        Hong Kong.
-    </p>
+<h3>Your Birthday</h3>
 
-    <p>
-        Macao.
-    </p>
+<p>
+Seeing you smile was always my favorite gift.
+</p>
 
-    <p>
-        Pacifica.
-    </p>
-
-    <p>
-        Monterey.
-    </p>
-
-    <p>
-        Every trip felt special because I was with you.
-    </p>
 </section>
 
-<section class="memory">
-    <h2>What You Gave Me</h2>
+<section class="memory fade">
 
-    <img src="sunflowers.jpeg">
+<img src="flowergirl.jpeg">
 
-    <p>
-        You were kind.
-    </p>
+<h3>You</h3>
 
-    <p>
-        Loyal.
-    </p>
+<p>
+Kind.
+</p>
 
-    <p>
-        Loving.
-    </p>
+<p>
+Loyal.
+</p>
 
-    <p>
-        Sweet.
-    </p>
+<p>
+Sweet.
+</p>
 
-    <p>
-        You cared about me when life felt difficult.
-    </p>
+<p>
+Always there when I needed you.
+</p>
 
-    <p>
-        You were there when I struggled.
-    </p>
-
-    <p>
-        You supported me even when I wasn't always easy to support.
-    </p>
 </section>
 
-<section class="memory">
-    <h2>One Year</h2>
+<section class="memory fade">
 
-    <img src="one-year.jpeg">
+<img src="herface.jpeg">
 
-    <p>
-        One year of memories.
-    </p>
+<h3>Your Smile</h3>
 
-    <p>
-        One year of laughter.
-    </p>
+<p>
+One of my favorite photos of you.
+</p>
 
-    <p>
-        One year of growing together.
-    </p>
+<p>
+One of my favorite people.
+</p>
+
 </section>
 
-<section class="memory">
-    <h2>My Favorite Version Of You</h2>
+<section class="memory fade">
 
-    <img src="tulips.jpeg">
+<img src="photobooth.jpeg">
 
-    <p>
-        Your smile.
-    </p>
+<h3>One Year</h3>
 
-    <p>
-        Your kindness.
-    </p>
+<p>
+A very happy one year.
+</p>
 
-    <p>
-        The way you cared for everyone around you.
-    </p>
+<p>
+A year filled with memories I will always cherish.
+</p>
 
-    <p>
-        The warmth you brought into every room.
-    </p>
 </section>
 
-<section class="memory final">
-    <h2>What I've Learned</h2>
+<section class="memory fade">
 
-    <p>
-        Somewhere along the way, we grew distant.
-    </p>
+<img src="marin.jpg">
 
-    <p>
-        I took your presence for granted.
-    </p>
+<h3>Marin</h3>
 
-    <p>
-        I wasn't always as present as you deserved.
-    </p>
+<p>
+Beautiful views.
+</p>
 
-    <p>
-        Looking back now, I understand how much that hurt.
-    </p>
+<p>
+Quiet moments.
+</p>
 
-    <p>
-        You've taught me what it means to be vulnerable.
-    </p>
+<p>
+The kind of memories that stay with you forever.
+</p>
 
-    <p>
-        You've taught me what it means to truly appreciate someone.
-    </p>
-
-    <p>
-        I regret the ways I failed you.
-    </p>
-
-    <p>
-        And regardless of what happens next, I will spend the rest of my life
-        becoming someone better because of what you've taught me.
-    </p>
-
-    <p>
-        More present.
-    </p>
-
-    <p>
-        More attentive.
-    </p>
-
-    <p>
-        More grateful.
-    </p>
-
-    <p>
-        More loving.
-    </p>
-
-    <p class="ending">
-        Thank you for every memory, Jacqueline ❤️
-    </p>
 </section>
 
-<script src="script.js"></script>
+<section class="memory fade">
+
+<img src="monterrey.jpg">
+
+<h3>Monterey</h3>
+
+<p>
+Ocean air.
+</p>
+
+<p>
+Long walks.
+</p>
+
+<p>
+Another chapter of us.
+</p>
+
+</section>
+
+<section class="memory fade">
+
+<img src="marriedinsac.jpg">
+
+<h3>Sacramento</h3>
+
+<p>
+More adventures.
+</p>
+
+<p>
+More laughter.
+</p>
+
+<p>
+More memories.
+</p>
+
+</section>
+
+<section class="section fade">
+
+<h2>The Places We Called Ours</h2>
+
+<div class="places-grid">
+
+<div class="place">
+<h4>Boston</h4>
+<p>Where we met and where everything began.</p>
+</div>
+
+<div class="place">
+<h4>New York</h4>
+<p>Where I told you I loved you and asked you to be my girlfriend.</p>
+</div>
+
+<div class="place">
+<h4>Hong Kong</h4>
+<p>Family, adventure, and seeing your world.</p>
+</div>
+
+<div class="place">
+<h4>Sydney</h4>
+<p>Visiting you across the world.</p>
+</div>
+
+<div class="place">
+<h4>Macao</h4>
+<p>New adventures together.</p>
+</div>
+
+<div class="place">
+<h4>Hawaii</h4>
+<p>Surfing, shaved ice, sunsets, and happiness.</p>
+</div>
+
+<div class="place">
+<h4>Pacifica</h4>
+<p>My hometown and sharing my world with you.</p>
+</div>
+
+<div class="place">
+<h4>Marin</h4>
+<p>Beautiful scenery and peaceful memories.</p>
+</div>
+
+<div class="place">
+<h4>Monterey</h4>
+<p>Ocean views and unforgettable moments.</p>
+</div>
+
+<div class="place">
+<h4>Sacramento</h4>
+<p>Another chapter of our story.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="final fade">
+
+<h2>What I Learned</h2>
+
+<p>
+You were kind, loving, loyal, and always there for me.
+</p>
+
+<p>
+You cared about me during some of the hardest periods of my life.
+</p>
+
+<p>
+As time passed, we grew distant.
+</p>
+
+<p>
+I took you for granted.
+</p>
+
+<p>
+I wasn't as present as I should have been.
+</p>
+
+<p>
+And I regret that deeply.
+</p>
+
+<p>
+This experience taught me what vulnerability truly means.
+</p>
+
+<p>
+It taught me how important it is to show up for the people you love every day.
+</p>
+
+<p>
+If I could do things differently, I would.
+</p>
+
+<p>
+I would be more present.
+</p>
+
+<p>
+I would communicate better.
+</p>
+
+<p>
+I would give you the attention and love you deserved.
+</p>
+
+<p>
+No matter what happens, these memories will always mean the world to me.
+</p>
+
+<p>
+Thank you for every trip.
+Every laugh.
+Every cuddle.
+Every sunset.
+Every memory.
+</p>
+
+</section>
+
+<script>
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
+});
+
+</script>
 
 </body>
 </html>
